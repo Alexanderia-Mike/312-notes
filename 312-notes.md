@@ -51,11 +51,23 @@
 	| voltage | D: grounded, S: $V_{DS}$ | S: grounded, D: $V_{DS}$ |
 	| subtrate | n ($V_{DD}$) | p (grounded) |
 2. the conditions
-
-	| | pMos | nMos (☑️) |
-	| :---: | :---: | :---: |
-	| gate voltage | $\le V_{DD}-V_T$ | $\ge V_T$ |
-	| saturation condition |  | $V_{DS} > V_{GS} - V_T$ |
+	<table>
+		<caption> cMos turn-on & saturation condition summary </caption>
+		<thead>
+			<tr> 
+				<th scope="col"> nMos </th> 
+				<th scope="col"> pMos </th> 
+				<th scope="col"> summary </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td> <img src="notes-images/nMos-condition.jpg" width="100%"/> </td>
+				<td> <img src="notes-images/pMos-condition.jpg" width="100%"/> </td>
+				<td> <img src="notes-images/condition-summary.jpg" width="100%"/> </td>
+			</tr>
+		</tbody>
+	</table>
 2. different nodes are isolated because of the pn junction pair in opposite directions
 3. when gate is applied with a high voltage (higher than threshold voltage $V_T$), the capacitance make a local part of p-type silicon to become a n-type silicon which can conduct electrons
 4. the gate capacitance:  
